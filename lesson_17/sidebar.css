@@ -1,33 +1,53 @@
 .side-menu {
-    position: fixed;
-
-    top: 60px;
-    left: 0;
-
-    width: 90px;
-    height: calc(100vh - 60px);
-
-    padding: 8px 12px;
-
-    background-color: white;
+  position: fixed;
+  left: 0;
+  top: 55px;
+  bottom: 0;
+  width: 72px;
+  padding-top: 5px;
+  background-color: white;
+  z-index: 200;
 }
 
 .side-item {
-    width: 66px;
-    height: 70px;
-
-    border-radius: 8px;
-
-    transition: background-color 0.2s;
+  height: 74px;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .side-item:hover {
-    background-color: rgb(240, 240, 240);
+  background-color: rgb(235, 235, 235);
 }
 
 .side-item img {
-    width: 26px;
-    height: 26px;
+  height: 24px;
+  margin-bottom: 4px;
+}
 
-    object-fit: contain;
+.side-item div {
+  font-size: 10px;
+}
+
+@media (min-width: 1200.1px) {
+  .side-menu {
+    width: 240px;
+    padding-top: 13px;
+  }
+
+  .side-item {
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 8px 24px;
+  }
+
+  .side-item img {
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+
+  .side-item div {
+    font-size: 14px;
+  }
 }

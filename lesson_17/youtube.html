@@ -1,541 +1,422 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="sidebar.css">
-    <link rel="stylesheet" href="content.css">
-    <link rel="stylesheet" href="tooltip.css">
-  </head>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="sidebar.css">
+  <link rel="stylesheet" href="content.css">
+  <link rel="stylesheet" href="tooltip.css">
+</head>
 
-  <body>
+<body>
 
-    <!-- HEADER -->
-    <header class="top-nav">
+<header class="top-nav">
 
-      <!-- Left section -->
-      <div class="nav-left row-align">
+  <div class="nav-left row-align">
+    <div class="hamburger-box row-align">
+      <img src="2-copy-of-code/lesson-17/icons/hamburger-menu.svg" alt="Menu">
+      <div class="hint">menu button</div>
+    </div>
 
-        <div class="hamburger-box row-align">
-          <img src="icons/hamburger-menu.svg" alt="Menu">
-          <div class="hint">menu button</div>
+    <button class="youtube-logo">
+      <img src="2-copy-of-code/lesson-17/icons/youtube-logo.svg" alt="YouTube">
+      <sup class="country-code">IN</sup>
+    </button>
+  </div>
+
+  <div class="nav-middle row-align">
+    <div class="search-wrapper row-align">
+      <input type="text" placeholder="Search">
+      <button class="search-icon row-align">
+        <img src="2-copy-of-code/lesson-17/icons/search.svg" alt="Search">
+      </button>
+      <div class="hint">Search here</div>
+    </div>
+
+    <button class="microphone row-align">
+      <img src="2-copy-of-code/lesson-17/icons/voice-search-icon.svg" alt="Voice search">
+      <div class="hint">Speak into mic</div>
+    </button>
+  </div>
+
+  <div class="nav-right row-align">
+    <button class="create-button row-align">
+      <img src="2-copy-of-code/lesson-17/icons/upload.svg" alt="">
+      <p>Create</p>
+    </button>
+
+    <div class="notification-icon">
+      <img src="2-copy-of-code/lesson-17/icons/notifications.svg" alt="Notifications">
+      <div class="hint">notifications</div>
+    </div>
+
+    <div class="user-profile">
+      <img src="2-copy-of-code/lesson-17/channel-pictures/my-channel.jpeg" alt="Profile">
+      <div class="hint">profile</div>
+    </div>
+  </div>
+
+</header>
+
+
+<aside class="side-menu">
+
+  <div class="side-item row-align">
+    <img src="2-copy-of-code/lesson-17/icons/home.svg" alt="Home">
+    <div>Home</div>
+  </div>
+
+  <div class="side-item row-align">
+    <img src="2-copy-of-code/lesson-17/icons/explore.svg" alt="Explore">
+    <div>Explore</div>
+  </div>
+
+  <div class="side-item row-align">
+    <img src="2-copy-of-code/lesson-17/icons/subscriptions.svg" alt="Subscriptions">
+    <div>Subscriptions</div>
+  </div>
+
+  <div class="side-item row-align">
+    <img src="2-copy-of-code/lesson-17/icons/originals.svg" alt="Originals">
+    <div>Originals</div>
+  </div>
+
+  <div class="side-item row-align">
+    <img src="2-copy-of-code/lesson-17/icons/youtube-music.svg" alt="YouTube Music">
+    <div>YouTube Music</div>
+  </div>
+
+  <div class="side-item row-align">
+    <img src="2-copy-of-code/lesson-17/icons/library.svg" alt="Library">
+    <div>Library</div>
+  </div>
+
+</aside>
+
+
+<main class="page-content">
+  <div class="videos-grid">
+
+    <!-- VIDEO 1 -->
+    <div class="video-box">
+      <a href="https://www.youtube.com/watch?v=TtPXvEcE11E" target="_blank">
+        <div class="thumbnail-box">
+          <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-1.webp" alt="React Tutorial">
+          <div class="video-time">14:20</div>
+        </div>
+      </a>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <a href="https://www.youtube.com/@SuperSimpleDev" target="_blank">
+            <img src="2-copy-of-code/lesson-17/channel-pictures/channel-1.jpeg" alt="SuperSimpleDev">
+          </a>
         </div>
 
-        <button class="youtube-logo">
-          <img src="icons/youtube-logo.svg" alt="YouTube">
-          <sup class="country-code">IN</sup>
-        </button>
-
-      </div>
-
-
-      <!-- Search section -->
-      <div class="nav-middle row-align">
-
-        <div class="search-wrapper row-align">
-
-          <input
-            type="text"
-            placeholder="Search"
-          >
-
-          <button class="search-icon row-align">
-            <img src="icons/search.svg" alt="Search">
-          </button>
-
-          <div class="hint">Search here</div>
-
-        </div>
-
-
-        <button class="microphone row-align">
-
-          <img
-            src="icons/voice-search-icon.svg"
-            alt="Voice search"
-          >
-
-          <div class="hint">Speak into mic</div>
-
-        </button>
-
-      </div>
-
-
-      <!-- Right section -->
-      <div class="nav-right row-align">
-
-        <button class="create-button row-align">
-          <img src="icons/upload.svg" alt="">
-          <p>Create</p>
-        </button>
-
-        <div class="notification-icon">
-          <img
-            src="icons/notifications.svg"
-            alt="Notifications"
-          >
-
-          <div class="hint">notifications</div>
-        </div>
-
-        <div class="user-profile">
-          <div class="hint">profile</div>
-        </div>
-
-      </div>
-
-    </header>
-
-
-    <!-- SIDEBAR -->
-    <aside class="side-menu">
-
-      <div class="side-item">
-        <img src="icons/home.svg" alt="Home">
-        <div>Home</div>
-      </div>
-
-      <div class="side-item">
-        <img src="icons/explore.svg" alt="Explore">
-        <div>Explore</div>
-      </div>
-
-      <div class="side-item">
-        <img src="icons/subscriptions.svg" alt="Subscriptions">
-        <div>Subscriptions</div>
-      </div>
-
-      <div class="side-item">
-        <img src="icons/originals.svg" alt="Originals">
-        <div>Originals</div>
-      </div>
-
-      <div class="side-item">
-        <img src="icons/youtube-music.svg" alt="YouTube Music">
-        <div>YouTube Music</div>
-      </div>
-
-      <div class="side-item">
-        <img src="icons/library.svg" alt="Library">
-        <div>Library</div>
-      </div>
-
-    </aside>
-
-
-    <!-- MAIN CONTENT -->
-    <main class="page-content">
-
-      <div class="videos-grid">
-
-
-        <!-- VIDEO 1 -->
-        <div class="video-box">
-
-          <a
-            href="https://www.youtube.com/watch?v=TtPXvEcE11E"
-            target="_blank"
-          >
-            <div class="thumbnail-box">
-              <img
-                src="thumbnails/thumbnail-1.webp"
-                alt="React Tutorial"
-              >
-            </div>
+        <div class="details-area">
+          <a href="https://www.youtube.com/watch?v=TtPXvEcE11E" target="_blank">
+            <p class="video-heading">React Tutorial Full Course - Beginner to Pro (React 19, 2025)</p>
           </a>
 
-          <div class="video-details">
-
-            <div class="channel-area">
-
-              <a
-                href="https://www.youtube.com/@SuperSimpleDev"
-                target="_blank"
-              >
-                <img
-                  src="channel-pictures/channel-1.jpeg"
-                  alt="SuperSimpleDev"
-                >
-              </a>
-
-              <div class="channel-popup">
-
-                <img
-                  src="channel-pictures/channel-1.jpeg"
-                  alt="SuperSimpleDev"
-                >
-
-                <div>
-                  <p>SuperSimpleDev</p>
-
-                  <p class="secondary-text">
-                    1.5M subscribers
-                  </p>
-                </div>
-
-              </div>
-
-            </div>
-
-
-            <div class="details-area">
-
-              <a
-                href="https://www.youtube.com/watch?v=TtPXvEcE11E"
-                target="_blank"
-              >
-                <p class="video-heading">
-                  React Tutorial Full Course - Beginner to Pro
-                  (React 19, 2025)
-                </p>
-              </a>
-
-              <div class="stats-row">
-
-                <p class="secondary-text">
-                  SuperSimpleDev
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  1.2M
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  1 yr ago
-                </p>
-
-              </div>
-
-            </div>
-
+          <div class="stats-row">
+            <p class="secondary-text">SuperSimpleDev</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">1.2M</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">1 yr ago</p>
           </div>
-
         </div>
-
-
-        <!-- VIDEO 7 -->
-        <div class="video-box">
-
-          <div class="thumbnail-box">
-            <img
-              src="thumbnails/thumbnail-7.webp"
-              alt="Why Planes Don't Fly Over Tibet"
-            >
-          </div>
-
-          <div class="video-details">
-
-            <div class="channel-area">
-              <img
-                src="channel-pictures/channel-7.jpeg"
-                alt="RealLifeLore"
-              >
-            </div>
-
-            <div class="details-area">
-
-              <p class="video-heading">
-                Why Planes Don't Fly Over Tibet
-              </p>
-
-              <div class="stats-row">
-
-                <p class="secondary-text">
-                  RealLifeLore
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  6.6M
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  1 year ago
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- VIDEO 8 -->
-        <div class="video-box">
-
-          <div class="thumbnail-box">
-            <img
-              src="thumbnails/thumbnail-8.webp"
-              alt="Inside The World's Biggest Passenger Plane"
-            >
-          </div>
-
-          <div class="video-details">
-
-            <div class="channel-area">
-              <img
-                src="channel-pictures/channel-8.jpeg"
-                alt="Tech Vision"
-              >
-            </div>
-
-            <div class="details-area">
-
-              <p class="video-heading">
-                Inside The World's Biggest Passenger Plane
-              </p>
-
-              <div class="stats-row">
-
-                <p class="secondary-text">
-                  Tech Vision
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  3.7M
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  10 months ago
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- VIDEO 9 -->
-        <div class="video-box">
-
-          <div class="thumbnail-box">
-            <img
-              src="thumbnails/thumbnail-9.webp"
-              alt="The SECRET to Super Human STRENGTH"
-            >
-          </div>
-
-          <div class="video-details">
-
-            <div class="channel-area">
-              <img
-                src="channel-pictures/channel-9.jpeg"
-                alt="ThenX"
-              >
-            </div>
-
-            <div class="details-area">
-
-              <p class="video-heading">
-                The SECRET to Super Human STRENGTH
-              </p>
-
-              <div class="stats-row">
-
-                <p class="secondary-text">
-                  ThenX
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  20M
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  3 years ago
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- VIDEO 10 -->
-        <div class="video-box">
-
-          <div class="thumbnail-box">
-            <img
-              src="thumbnails/thumbnail-10.webp"
-              alt="How The World's Largest Cruise Ship Makes 30,000 Meals Every Day"
-            >
-          </div>
-
-          <div class="video-details">
-
-            <div class="channel-area">
-              <img
-                src="channel-pictures/channel-10.jpeg"
-                alt="Business Insider"
-              >
-            </div>
-
-            <div class="details-area">
-
-              <p class="video-heading">
-                How The World's Largest Cruise Ship Makes
-                30,000 Meals Every Day
-              </p>
-
-              <div class="stats-row">
-
-                <p class="secondary-text">
-                  Business Insider
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  14M
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  1 year ago
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- VIDEO 11 -->
-        <div class="video-box">
-
-          <div class="thumbnail-box">
-            <img
-              src="thumbnails/thumbnail-11.webp"
-              alt="Dubai's Crazy Underwater Train"
-            >
-          </div>
-
-          <div class="video-details">
-
-            <div class="channel-area">
-              <img
-                src="channel-pictures/channel-11.jpeg"
-                alt="Destination Tips"
-              >
-            </div>
-
-            <div class="details-area">
-
-              <p class="video-heading">
-                Dubai's Crazy Underwater Train and Other Things
-                #Only in Dubai
-              </p>
-
-              <div class="stats-row">
-
-                <p class="secondary-text">
-                  Destination Tips
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  3M
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  1 year ago
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-        <!-- VIDEO 12 -->
-        <div class="video-box">
-
-          <div class="thumbnail-box">
-            <img
-              src="thumbnails/thumbnail-12.webp"
-              alt="What would happen if you didn't drink water"
-            >
-          </div>
-
-          <div class="video-details">
-
-            <div class="channel-area">
-              <img
-                src="channel-pictures/channel-12.jpeg"
-                alt="TED-Ed"
-              >
-            </div>
-
-            <div class="details-area">
-
-              <p class="video-heading">
-                What would happen if you didn’t drink water?
-                - Mia Nacamulli
-              </p>
-
-              <div class="stats-row">
-
-                <p class="secondary-text">
-                  TED-Ed
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  12M
-                </p>
-
-                <p class="secondary-text">•</p>
-
-                <p class="secondary-text">
-                  5 years ago
-                </p>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
+      </div>
+    </div>
+
+
+    <!-- VIDEO 2 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-2.webp" alt="Try Not To Laugh Challenge #9">
+        <div class="video-time">8:22</div>
       </div>
 
-    </main>
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-2.jpeg" alt="Markiplier">
+        </div>
 
-  </body>
+        <div class="details-area">
+          <p class="video-heading">Try Not To Laugh Challenge #9</p>
+          <div class="stats-row">
+            <p class="secondary-text">Markiplier</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">19M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">4 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 3 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-3.webp" alt="Crazy Tik Toks Taken Moments Before DISASTER">
+        <div class="video-time">9:13</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-3.jpeg" alt="SSSniperWolf">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">Crazy Tik Toks Taken Moments Before DISASTER</p>
+          <div class="stats-row">
+            <p class="secondary-text">SSSniperWolf</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">12M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 4 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-4.webp" alt="Collatz Conjecture">
+        <div class="video-time">22:09</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-4.jpeg" alt="Veritasium">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+          <div class="stats-row">
+            <p class="secondary-text">Veritasium</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">18M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">4 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 5 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-5.webp" alt="Kadane's Algorithm">
+        <div class="video-time">11:17</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-5.jpeg" alt="CS Dojo">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+          <div class="stats-row">
+            <p class="secondary-text">CS Dojo</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">519K views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">5 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 6 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-6.webp" alt="Anything You Can Fit In The Circle">
+        <div class="video-time">19:59</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-6.jpeg" alt="MrBeast">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">Anything You Can Fit In The Circle I’ll Pay For</p>
+          <div class="stats-row">
+            <p class="secondary-text">MrBeast</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">141M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 7 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-7.webp" alt="Why Planes Don't Fly Over Tibet">
+        <div class="video-time">10:13</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-7.jpeg" alt="RealLifeLore">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">Why Planes Don't Fly Over Tibet</p>
+          <div class="stats-row">
+            <p class="secondary-text">RealLifeLore</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">6.6M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 8 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-8.webp" alt="Inside The World's Biggest Passenger Plane">
+        <div class="video-time">7:12</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-8.jpeg" alt="Tech Vision">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">Inside The World's Biggest Passenger Plane</p>
+          <div class="stats-row">
+            <p class="secondary-text">Tech Vision</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">3.7M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">10 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 9 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-9.webp" alt="The SECRET to Super Human STRENGTH">
+        <div class="video-time">13:17</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-9.jpeg" alt="ThenX">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">The SECRET to Super Human STRENGTH</p>
+          <div class="stats-row">
+            <p class="secondary-text">ThenX</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">20M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">3 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 10 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-10.webp" alt="How The World's Largest Cruise Ship Makes 30,000 Meals Every Day">
+        <div class="video-time">7:53</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-10.jpeg" alt="Business Insider">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
+          <div class="stats-row">
+            <p class="secondary-text">Business Insider</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">14M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 11 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-11.webp" alt="Dubai's Crazy Underwater Train">
+        <div class="video-time">4:10</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-11.jpeg" alt="Destination Tips">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+          <div class="stats-row">
+            <p class="secondary-text">Destination Tips</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">3M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- VIDEO 12 -->
+    <div class="video-box">
+      <div class="thumbnail-box">
+        <img src="2-copy-of-code/lesson-17/thumbnails/thumbnail-12.webp" alt="What would happen if you didn't drink water">
+        <div class="video-time">4:51</div>
+      </div>
+
+      <div class="video-details">
+        <div class="channel-area">
+          <img src="2-copy-of-code/lesson-17/channel-pictures/channel-12.jpeg" alt="TED-Ed">
+        </div>
+
+        <div class="details-area">
+          <p class="video-heading">What would happen if you didn’t drink water? - Mia Nacamulli</p>
+          <div class="stats-row">
+            <p class="secondary-text">TED-Ed</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">12M views</p>
+            <p class="secondary-text">•</p>
+            <p class="secondary-text">5 years ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+</body>
 </html>
