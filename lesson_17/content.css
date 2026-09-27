@@ -1,0 +1,161 @@
+.page-content {
+    margin-left: 100px;
+    padding-top: 80px;
+    padding-right: 24px;
+}
+
+
+.videos-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 24px;
+    row-gap: 40px;
+}
+
+
+.video-box {
+    width: 100%;
+    max-width: 400px;
+
+    padding: 8px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+.video-box:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+
+/* thumbnail */
+
+.thumbnail-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.thumbnail-box img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+/* video information */
+
+.video-details {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 12px;
+
+    width: 100%;
+
+    padding-top: 12px;
+}
+
+
+/* channel */
+
+.channel-area {
+    position: relative;
+
+    flex-shrink: 0;
+
+    width: 36px;
+    height: 36px;
+}
+
+.channel-area > a > img {
+    display: block;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+/* text section */
+
+.details-area {
+    flex: 1;
+
+    min-width: 0;
+}
+
+.title-row {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+.video-heading {
+    margin: 0;
+
+    width: 100%;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+
+    color: rgb(15, 15, 15);
+}
+
+
+/* video statistics */
+
+.stats-row {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 5px;
+
+    margin-top: 8px;
+}
+
+.secondary-text {
+    margin: 0;
+
+    padding: 0;
+
+    color: rgb(96, 96, 96);
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+@media (min-width: 1000px) {
+    .video-heading {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .secondary-text {
+        font-size: 14px;
+    }
+}

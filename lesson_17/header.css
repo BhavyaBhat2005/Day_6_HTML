@@ -1,0 +1,224 @@
+.top-nav {
+    --nav-height: 60px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: var(--nav-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2px 24px;
+    padding-top: 12px;
+
+    background-color: white;
+
+    z-index: 10;
+}
+
+
+/* left side */
+
+.nav-left {
+    gap: 24px;
+}
+
+.hamburger-box {
+    position: relative;
+
+    height: 36px;
+    width: 36px;
+
+    border-radius: 18px;
+
+    overflow: visible;
+
+    background-color: transparent;
+
+    transition: background-color 0.2s;
+}
+
+.hamburger-box:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+.hamburger-box img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+}
+
+
+.youtube-logo {
+    position: relative;
+
+    height: 36px;
+
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    padding: 6px;
+
+    border-radius: 6px;
+}
+
+.youtube-logo:hover {
+    background-color: rgba(128, 128, 128, 0.148);
+}
+
+.youtube-logo img {
+    height: 100%;
+    width: auto;
+
+    object-fit: contain;
+}
+
+.country-code {
+    margin-top: -12px;
+
+    font-size: 8px;
+}
+
+
+/* middle */
+
+.nav-middle {
+    gap: 24px;
+}
+
+.search-wrapper {
+    position: relative;
+
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper input {
+    width: 500px;
+    height: 36px;
+
+    padding: 6px 24px;
+
+    border: 1px solid gray;
+
+    border-radius: 18px 0 0 18px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.search-wrapper input:focus {
+    border: 2px solid rgb(42, 42, 178);
+}
+
+.search-icon {
+    width: 60px;
+    height: 36px;
+
+    border: 1px solid gray;
+    border-left: none;
+
+    border-radius: 0 18px 18px 0;
+
+    background-color: transparent;
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+
+.microphone {
+    position: relative;
+
+    width: 48px;
+    height: 48px;
+
+    padding: 12px;
+
+    margin: 2px;
+
+    border: none;
+
+    border-radius: 24px;
+
+    background-color: rgba(224, 224, 224, 0.563);
+
+    overflow: visible;
+}
+
+.microphone img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+
+/* right side */
+
+.nav-right {
+    gap: 24px;
+}
+
+.create-button {
+    height: 36px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 24px;
+
+    background-color: rgba(224, 224, 224, 0.563);
+}
+
+.create-button img {
+    width: 16px;
+    height: 16px;
+
+    object-fit: contain;
+}
+
+.create-button p {
+    font-size: 14px;
+}
+
+
+.notification-icon {
+    position: relative;
+
+    height: 24px;
+}
+
+.notification-icon img {
+    width: 24px;
+    height: 24px;
+
+    object-fit: contain;
+}
+
+
+.user-profile {
+    position: relative;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 18px;
+
+    background-color: rgb(237, 142, 115);
+}

@@ -1,0 +1,102 @@
+.hint {
+    position: absolute;
+
+    left: 50%;
+    bottom: -42px;
+
+    transform: translateX(-50%);
+
+    padding: 8px 12px;
+
+    background-color: rgb(50, 50, 50);
+    color: white;
+
+    border-radius: 4px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: opacity 0.15s;
+
+    z-index: 100;
+}
+
+
+/* show tooltip only on hover */
+
+.hamburger-box:hover .hint,
+.search-wrapper:hover .hint,
+.microphone:hover .hint,
+.notification-icon:hover .hint,
+.user-profile:hover .hint {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* channel popup */
+
+.channel-popup {
+    position: absolute;
+
+    left: 0;
+    top: 44px;
+
+    width: 250px;
+    height: 80px;
+
+    padding: 12px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition: opacity 0.2s;
+
+    z-index: 100;
+}
+
+
+.channel-popup > img {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+
+.channel-popup p {
+    margin: 0;
+}
+
+
+.channel-popup .secondary-text {
+    margin-top: 4px;
+}
+
+
+.channel-area:hover .channel-popup {
+    opacity: 1;
+    visibility: visible;
+}

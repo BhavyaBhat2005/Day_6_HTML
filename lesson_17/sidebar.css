@@ -1,0 +1,33 @@
+.side-menu {
+    position: fixed;
+
+    top: 60px;
+    left: 0;
+
+    width: 90px;
+    height: calc(100vh - 60px);
+
+    padding: 8px 12px;
+
+    background-color: white;
+}
+
+.side-item {
+    width: 66px;
+    height: 70px;
+
+    border-radius: 8px;
+
+    transition: background-color 0.2s;
+}
+
+.side-item:hover {
+    background-color: rgb(240, 240, 240);
+}
+
+.side-item img {
+    width: 26px;
+    height: 26px;
+
+    object-fit: contain;
+}
